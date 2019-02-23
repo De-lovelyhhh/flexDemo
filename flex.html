@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .HolyGrail {
+            display: flex;
+            min-height: 100vh;
+            flex-direction: column;
+            justify-content:  center;
+        }
+
+        header,
+        footer {
+            flex: 1;
+            background-color: #a5a5a5;
+        }
+
+        .HolyGrail-body {
+            display: flex;
+            flex: 8;
+        }
+
+        .header{
+            display: flex;
+        }
+
+        .HolyGrail-content,.flex2 {
+            flex: 1;
+        }
+
+        .flex1{
+            flex: 0 0 70%;
+        }
+
+        .HolyGrail-nav, .HolyGrail-ads {
+            display: flex;
+            align-content: flex-start;
+            flex: 0 0 12em;
+            background-color: #dcdcdc;
+        }
+
+        .HolyGrail-nav {
+            order: -1;
+        }
+
+        .main2{
+            display: flex;
+            flex: 1;
+            height: 300px;
+            flex-direction: column;
+        }
+
+        .main1{
+            flex: 1;
+        }
+
+        .main3{
+            border: solid bisque;
+            height: 200px;
+        }
+
+        .content{
+            border: solid bisque;
+            flex: 1;
+        }
+
+        button{
+            height: 30px;
+            flex: 0 50%;
+        }
+    </style>
+</head>
+<!--<body>
+<div class="box">
+    <div class=" box1 box11">baseline</div>
+    <div class="box1 box12">baseline</div>
+    <div class="box1 box13">baseline</div>
+</div>
+<div>
+    <div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</div>
+</body>-->
+<body class="HolyGrail">
+<header class="header">
+    <div class="flex2">假装有logo</div>
+    <div class="flex2 flex1"></div>
+    <div class="flex2">假装有东西</div>
+</header>
+<div class="HolyGrail-body">
+    <main class="HolyGrail-content" style="display: flex">
+        <div class="main1 main2">
+            <div class="content"></div>
+            <div class="content" style="flex: 0 70%"></div>
+        </div>
+        <div class="main1 main3"></div>
+        <div class="main1 main3" style="align-self: flex-end"></div>
+    </main>
+    <nav class="HolyGrail-nav" style="flex-wrap: wrap">
+        <button class="button">按钮1</button>
+        <button class="button">按钮2</button>
+        <button class="button">按钮3</button>
+    </nav>
+    <aside class="HolyGrail-ads">
+        <button class="button">按钮1</button>
+        <button class="button">按钮2</button>
+        <button class="button">按钮3</button>
+    </aside>
+</div>
+<footer></footer>
+</body>
+</html>
